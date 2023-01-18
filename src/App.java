@@ -4,12 +4,12 @@ import threads.*;
 public class App {
 
     public static void main(String[] args) {
-        Market mercado = new Market(10);
+        Market mercado = new Market(5);
 
-        Farmer oscar = new Farmer(mercado, "Óscar", 5, 4000);
-        Client juan = new Client(mercado, "Juan", 5, 4000);
+        Farmer adrian = new Farmer(mercado, "Adrián", 5, 4000);
+        Client goyo = new Client(mercado, "Goyo", 5, 4000);
         
-        oscar.start();
-        juan.start();
+        adrian.start();
+        goyo.start();
     }
 }
