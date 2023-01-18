@@ -32,6 +32,7 @@ public class Market {
         lista[indice] = vegetable;
         indice++;
         this.estaVacia = false;
+        
         if (indice == this.lista.length) {
             this.estaLlena = true;
         }
